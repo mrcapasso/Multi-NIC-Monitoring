@@ -1,4 +1,6 @@
-import os
+import os, sys, pprint, csv
+import psutil
+import pandas as pd
 import net_address_module as netAdd
 import net_IO_module as netIO
 import net_stat_module as netStat
@@ -9,7 +11,9 @@ import net_stat_module as netStat
 #Time series of netAddressNIC(dict) for each NIC
 
 def main(): 
-    pass
+    #Configurations
+    DATA_FOLDER = r'Data'
+    CONSOLE_TEXT_OUTPUT = True
 
 if __name__ == "__main__":
     os.system('cls')
